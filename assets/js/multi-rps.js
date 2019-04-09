@@ -10,3 +10,30 @@
   firebase.initializeApp(config);
 
   let database = firebase.database();
+
+  const rockBtn = $(".rock-btn");
+  const paperBtn = $(".paper-btn");
+  const scissorBtn = $(".scissor-btn");
+
+
+
+  rockBtn.on("click", function() {
+
+let rock = rockBtn.val().trim();
+
+console.log(rock)
+  });
+
+  paperBtn.on("click", function() {
+
+let paper = paperBtn.val().trim();
+
+console.log(paper);
+  });
+
+  scissorBtn.on("click", function() {
+
+let scissor = scissorBtn.val().trim();
+
+console.log(scissor);
+  });

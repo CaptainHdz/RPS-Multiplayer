@@ -22,6 +22,9 @@
 let rock = rockBtn.val().trim();
 
 console.log(rock)
+
+database.ref().push(rock);
+
   });
 
   paperBtn.on("click", function() {
@@ -29,6 +32,8 @@ console.log(rock)
 let paper = paperBtn.val().trim();
 
 console.log(paper);
+
+database.ref().push(paper);
   });
 
   scissorBtn.on("click", function() {
@@ -36,4 +41,7 @@ console.log(paper);
 let scissor = scissorBtn.val().trim();
 
 console.log(scissor);
+
+database.ref().push(scissor);
   });
+

@@ -45,3 +45,8 @@ console.log(scissor);
 database.ref().push(scissor);
   });
 
+const ConnectionRef = database.ref("/connections");
+
+let connectionStatus = database.ref(".info/connected");
+
+console.log(connectionStatus);
